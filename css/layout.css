@@ -1,5 +1,5 @@
 :root {
-    --primary--color: #3760E6; 
+    --primary-color: #3760E6; 
     --secondary-color: #38D983; 
     --dark-blue: #1A2E44;
     --light-gray: #F5F7FA;
@@ -33,41 +33,41 @@ body {
     z-index: 100;
 }
 
-.header_logo {
+.header__logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+     justify-content: center;
     gap: var(--spacing-xs);
     position: relative;
     z-index: 2;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue); 
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     padding: var(--spacing-s) var(--spacing-m);
     height: 100%;
 }
 
-.header_logo img {
+.header__logo img {
     height: 30px;
     filter: brightness(0) invert(1);
 }
 
-.header_logo-background {
+.header__logo-background { 
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100px;
+    width: 180px;
     display: none;
 }
 
-.header_nav {
+.header__nav {
     display: flex;
     align-items: center;
     gap: var(--spacing-m);
     margin-left: 170px;
 }
 
-.header_nav-list {
+.header__nav-list {
     display: flex;
     gap: var(--spacing-m);
 }

@@ -4,11 +4,12 @@
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
 }
 
-.btn svg {
+.btn svg { 
     width: 16px;
     height: 16px;
     fill: currentColor;
@@ -53,6 +54,7 @@
     transform: translateY(-2px);
 }
 
+
 .btn--card {
     background-color: var(--primary-color);
     color: var(--white);
@@ -65,20 +67,26 @@
     transform: translateY(-2px);
 }
 
-.price-card_prince  {
+.price-card__price {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: var(--spacing-s);
 }
 
-.price-card_features {
-    text-align: left;
-    margin-bottom: var(--spacing-m);
-    flex-grow: 1;
+.price-card__period {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color-secondary);
 }
 
-.header_menu-icon {
+.price-card__features {
+    text-align: left;
+    margin-bottom: var(--spacing-m);
+    flex-grow: 1; 
+}
+
+.header__menu-icon {
     display: block;
     width: 25px;
     height: 3px;
@@ -102,11 +110,11 @@
     transform: translateY(-8px);
 }
 
-.header__menu-icon::after   {
+.header__menu-icon::after {
     transform: translateY(8px);
 }
 
-.header_menu-toggle.is-active .header_menu-icon {
+.header__menu-toggle.is-active .header__menu-icon {
     background-color: transparent;
 }
 
